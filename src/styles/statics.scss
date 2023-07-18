@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+$primery-color: #7500c0;
+$text-color: #2e2e2e;
+$white-color: #fff;
+$black-color: #000;
+$gray-light: #fafafa;
+
+body,*,html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: $text-color;
+}
+
+@import "home";

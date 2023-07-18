@@ -1,0 +1,64 @@
+.home{
+
+    background-color: $gray-light;
+    width: 100%;
+    height: 90vh;
+    h1{
+        background-color: $primery-color;
+        color: $white-color;
+        padding: 15px 0;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+    }
+
+    .selection-sec {
+        width: 100%;
+        height: 100%;
+        background-color: #F4F4F4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            margin: 4rem 0 2rem;
+        }
+    }
+
+    .select-op{
+        select, a{
+            padding: 5px 10px;
+            text-decoration: none;
+            background-color: $primery-color;
+            color: $white-color;
+            margin: 0 10px;
+            font-size: 1rem;
+            opacity: .7;
+            transition: .3s;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: 400;
+
+            
+        }
+
+        option{
+            font-size: 1rem;
+            color: $white-color;
+
+        }
+
+        a{
+            padding: 7px 20px;
+        }
+
+        select:hover, a:hover{
+            opacity: 1;
+        }
+
+
+
+        
+    }
+
+}
