@@ -15,8 +15,8 @@ const Home = () => {
 
       <div className="selection-sec">
         <h2> Select Your Channel. </h2>
-        <div className="select-op">
-          <select onChange={pathHandler}>
+        <div className="select-op form-group">
+          <select onChange={pathHandler} className="form-control dropdown-primary">
             <option value="/"> Select </option>
             <option value="/ipad"> iPad </option>
             <option value="/epublish"> Epublish </option>

@@ -13,5 +13,10 @@ body,*,html{
     font-family: 'Roboto', sans-serif;
     color: $text-color;
 }
+img{
+    max-width: 100%;
+}
 
 @import "home";
+@import "ReUseable";
+@import "ipadUpdate";
