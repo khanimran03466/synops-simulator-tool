@@ -1,11 +1,29 @@
 .main-body{
     display: flex;
+    display: flex;
+    height: calc(100vh - 165px);
+    overflow: hidden;
 
     .left-nav{
         max-width: 222px;
         width: 100%;
         box-shadow: rgba(0, 35, 64, 0.2) 0px 3px 6px 0px;
         background: $gray-light;
-        overflow-y: scroll;
+        overflow: hidden;
+        height: 100%;
     }
+
+    .right-img-cont{
+        height: 100%;
+        overflow-x: hidden;
+    }
+}
+
+body{
+    overflow: hidden;
+}
+
+.title-header{
+    display: flex;
+    align-items: center;
 }
