@@ -1,24 +1,29 @@
 .left-nav {
+    position: relative;
+    z-index: 99999;
     ul {
         list-style-type: none;
 
         li {
-            margin: 10px 0;
+            margin-bottom: 10px 0;
 
-            button {
+            a {
                 display: flex;
                 align-items: center;
                 font-size: 14px;
                 width: 100%;
                 padding: 5px 10px;
                 transition: .5s;
+                text-decoration: none;
+                border-radius: 5px;
+                
             }
 
-            button.active{
+            a.active{
                 background-color: #eaeaea;
             }
 
-            button:hover{
+            a:hover{
                 background-color: #eaeaea;
             }
 

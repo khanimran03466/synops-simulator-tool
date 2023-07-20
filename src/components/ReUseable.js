@@ -2,15 +2,15 @@ import React, {useState} from "react";
 import { Outlet } from 'react-router-dom';
 import LeftNav from "./LeftNav";
 
-const ReUseable = ({
-  headerImg,
-  minimizeIcon,
-}) => {
+import minimizeIcon from "./../images/icons/minimize-icon.png";
+
+const ReUseable = ({headerImage, totalDoc}) => {
+
   const [headerTitle, setHeaderTitle] = useState("Updates")
   return (
     <>
       <div className="head">
-        <img src={headerImg} alt="head" />
+        <img src={headerImage} alt="head" />
         <div className="title-header px-3 py-3">
           <span className="left-icon">
             <img src={minimizeIcon} alt="" />
@@ -19,7 +19,7 @@ const ReUseable = ({
         </div>
       </div>
       <div className="main-body">
-        <LeftNav setHeaderTitle={setHeaderTitle} />
+        <LeftNav setHeaderTitle={setHeaderTitle} totalDoc={totalDoc} />
         <Outlet />
       </div>
     </>

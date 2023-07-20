@@ -3,10 +3,10 @@ import React from "react";
 const ImageContainer = ({ images }) => {
   return (
     <>
-      <div className="container-fluid mr-0 pr-0">
+      <div className="pl-1">
         <div className="right-img-cont">
           {
-            images.map((image) => <img src={image} alt="" />)
+            images.map((image) => <img src={image} alt="" key={(Math.random()*100)}/>)
           }
         </div>
       </div>

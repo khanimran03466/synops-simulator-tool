@@ -18,6 +18,12 @@ img{
     display: block
 }
 
+.right-img-cont{
+    img{
+        zoom: 2
+    }
+}
+
 @import "home";
 @import "leftNav";
 @import "ReUseable";
