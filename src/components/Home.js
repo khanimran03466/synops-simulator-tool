@@ -20,6 +20,7 @@ const Home = () => {
             <option value="/"> Select </option>
             <option value="/ipad"> iPad </option>
             <option value="/epublish"> Epublish </option>
+            <option value="/email"> Email </option>
             <option value="/banner"> Banner </option>
           </select>
           <Link to={path}>Select</Link>
