@@ -9,12 +9,15 @@ import documentIcon from "../images/icons/document-icon.png";
 import issueIcon from "../images/icons/issue-icon.png";
 import hoursIcon from "../images/icons/hours-icon.png";
 import peopleIcon from "../images/icons/people-icon.png";
+import homeIcon from "../images/icons/home-icon.png";
 
 const LeftNav = ({ setHeaderTitle, totalDoc }) => {
   const updateTitle = (e) => {
     setHeaderTitle(e.target.innerText);
   };
-  console.log("imran ", totalDoc)
+
+  console.log("imran ", totalDoc);
+
   return (
     <>
       <div className="left-nav">
@@ -74,6 +77,16 @@ const LeftNav = ({ setHeaderTitle, totalDoc }) => {
                   <img src={peopleIcon} alt="" />
                 </span>
                 <span>People</span>
+              </NavLink>
+            </li>
+          </ul>
+          <ul>
+            <li className="mb-1">
+              <NavLink to="/">
+                <span className="left-icon">
+                  <img src={homeIcon} alt="Home icon" />
+                </span>
+                <span> Go to Home Page</span>
               </NavLink>
             </li>
           </ul>
