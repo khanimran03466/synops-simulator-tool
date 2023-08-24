@@ -55,10 +55,15 @@ function App() {
             <Route path="hours" element={<ImageContainer images={[iPadTime]} />} />
             <Route path="people" element={<ImageContainer images={[iPadPeople]} />} />
           </Route>
-          <Route path="/epublish" element={<ReUseable headerImage={ipadHeader} />}>
+          <Route path="/epublish" element={<ReUseable headerImage={ipadHeader} totalDoc="(86)" />}>
             <Route index element={<Navigate to="updates" replace />} />
             <Route path="updates" element={<ImageContainer images={[UpdateImage1, UpdateImage2]} />} />
             <Route path="tasks" element={<ImageContainer images={[TaskImg]} />} />
+            <Route path="overview" element={<ImageContainer images={[overview]} />} />
+            <Route path="documents" element={<ImageContainer images={[documents]} />} />
+            <Route path="issue" element={<ImageContainer images={[issues]} />} />
+            <Route path="hours" element={<ImageContainer images={[iPadTime]} />} />
+            <Route path="people" element={<ImageContainer images={[iPadPeople]} />} />
           </Route>
           <Route path="/email" element={<ReUseable headerImage={emailHeader} totalDoc="(17)" />}>
             <Route index element={<Navigate to="updates" replace />} />
