@@ -1,0 +1,130 @@
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/bg-img/Gradient4_GTS.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .login {
+    max-width: 440px;
+    margin: auto;
+    width: 100%;
+    background-color: #fff;
+    padding: 44px 0 0 0;
+
+    .login-logo {
+      img {
+        max-width: 136px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .warning-text {
+      background-color: #f2f2f2;
+      padding: 24px 44px 36px 44px;
+      font-size: 15px;
+      color: #333;
+    }
+
+    form {
+      input,
+      button {
+        display: block;
+        margin-bottom: 25px;
+        padding: 4px 8px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(255, 255, 255, 0.4);
+        padding: 6px 10px;
+        border-width: 1px;
+        border-color: #666;
+        border-color: rgba(0, 0, 0, 0.6);
+        height: 36px;
+        outline: none;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        background-color: transparent;
+        border-top-width: 0;
+        border-left-width: 0;
+        border-right-width: 0;
+        padding-left: 0;
+        width: 100%;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+      }
+
+      button {
+        border-color: #0067b8;
+        background-color: #0067b8;
+        color: #fff;
+        width: auto;
+        height: auto;
+        padding: 5px 30px;
+        align-self: flex-end;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background-color: #2075b6;
+      }
+
+      .input-wrapper + p {
+        color: #0067b8;
+        cursor: pointer;
+        margin-bottom: 25px;
+        font-size: 13px;
+      }
+
+      input.green {
+        border-color: green;
+      }
+
+      input.red {
+        border-color: red;
+      }
+    }
+  }
+
+  .login-logo,
+  .warning-text,
+  form {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+}
+
+.input-wrapper {
+  position: relative;
+
+  svg {
+    position: absolute;
+    right: 0;
+    top: 12%;
+    font-size: 20px;
+    fill: green;
+    display: none;
+  }
+
+  input.green + svg {
+    display: block;
+}
+}
+
+

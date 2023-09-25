@@ -4,7 +4,9 @@ import "./App.css";
 import "./styles/statics.scss";
 import Home from "./components/Home";
 import ReUseable from "./components/ReUseable";
-import ImageContainer from "./components/ImageContainer"
+import ImageContainer from "./components/ImageContainer";
+// Intro.js/css
+import 'intro.js/introjs.css';
 
 // Images for ipad
 import UpdateImage1 from "./images/ipad/iPadUpdate1.png";
@@ -37,14 +39,26 @@ import bannerDocuments from "./images/banner/banner-documents.png";
 import bannerIssue from "./images/banner/banner-issue.png";
 import bannerHours from "./images/banner/banner-hours.png";
 import bannerPeople from "./images/banner/banner-people.png";
+import Login from "./components/Login";
+import { useState } from "react";
 
 
 function App() {
+
+  const [userLogin, setUserLogin] = useState('');
+
+  const isUserLoginHandler = (path) =>{
+    setUserLogin(path);
+  }
+
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+
+          <Route path="/" element={ userLogin=="login" ? <Home /> : <Login isUserLoginHandler={isUserLoginHandler} /> } />
+
+          {/* <Route path="/" element={<Home />} /> */}
           <Route path="/ipad" element={<ReUseable headerImage={ipadHeader} totalDoc="(86)" />}>
             <Route index element={<Navigate to="updates" replace />} />
             <Route path="updates" element={<ImageContainer images={[UpdateImage1, UpdateImage2]} />} />
